@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Serif HK", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif HK", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-calligraphy: "Ma Shan Zheng", cursive;
+  
+  --color-ink: #1a1a1a;
+  --color-paper: #f5f2ed;
+  --color-crimson: #8b0000;
+  --color-gold: #d4af37;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.font-calligraphy {
+  font-family: var(--font-calligraphy);
+}
+
+/* Vertical text utility */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* Custom scrollbar for a more refined look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-crimson);
+}
